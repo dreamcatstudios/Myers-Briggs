@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/parody3.mp3-c4b09982b9c3af76656407fb3a43d798.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/question15/parody3.mp3"
+dest_files=[ "res://.import/parody3.mp3-c4b09982b9c3af76656407fb3a43d798.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
