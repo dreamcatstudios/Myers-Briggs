@@ -7,7 +7,7 @@ extends Control
 var gameObject = {
 	1: {
 		"question": "Are you more energized by:",
-		"options": ["Interacting with people and sealing deals", "Crunching numbers and analyzing data", "Hiding in the break room and avoiding eye contact", "Daydreaming about becoming the CEO while pretending to work"],
+		"options": ["Interacting with people and sealing deals", "Crunching numbers and analyzing data", "Hiding in the break room and avoiding eye contact", "Daydreaming about becoming the CEO"],
 		"animation": "option1" 
 	},
 	2: {
@@ -32,37 +32,37 @@ var gameObject = {
 	},
 	6: {
 		"question": "When faced with a tight deadline, you:",
-		"options": ["Rise to the occasion with adrenaline-fueled productivity", "Organize your tasks meticulously and prioritize effectively", "Organize your tasks meticulously and prioritize effectively", "Organize your tasks meticulously and prioritize effectively"],
+		"options": ["Rise to the occasion", "Organize tasks effectively", "Seek assistance from team", "Utilize time management"],
 		"animation": "option6" 
 	},
 	7: {
 		"question": "When it comes to team projects, you:",
-		"options": ["Take charge and lead the team to victory", "Collaborate closely with your team, leveraging everyone's strengths", "Disappear into the background and hope nobody notices your absence", "Manipulate your way into taking credit for the team's success"],
+		"options": ["Take charge and lead", "Collaborate with team", "Disappear into the background", "Manipulate to take credit"],
 		"animation": "option7" 
 	},
 	8: {
 		"question": "Your approach to networking events involves:",
-		"options": ["Mingling with confidence and making connections effortlessly", "Researching attendees beforehand to strategically target key contacts", "Finding excuses to avoid attending altogether", "Turning every interaction into a sales pitch for yourself."],
+		"options": ["Mingle with confidence", "Research attendees strategically", "Find excuses to avoid", "Turn interactions into sales pitch"],
 		"animation": "option8" 
 	},
 	9: {
 		"question": "Your reaction to a new corporate policy change is:",
-		"options": ["Embracing it enthusiastically and seeing it as an opportunity", "Analyzing its potential impact and devising strategies to adapt", "Complaining loudly to anyone who will listen and circulating a petition", "Ignoring it completely and hoping it goes away on its own"],
+		"options": ["Embrace it enthusiastically", "Analyze its impact and adapt", "Complain loudly and circulate petition", "Ignore it and hope it goes away"],
 		"animation": "option9" 
 	},
 	10: {
 		"question": "Your reaction to a colleague's promotion is:",
-		"options": ["Congratulating them sincerely and offering your support", "Analyzing their career trajectory and strategizing your next move", "Sabotaging their efforts behind the scenes and spreading rumors", "Pretending to be happy for them while secretly plotting their downfall"],
+		"options": ["Congratulate them sincerely", "Analyze their career and strategize", "Sabotage their efforts", "Pretend to be happy while plotting"],
 		"animation": "option10" 
 	},
 	11: {
 		"question": "Your approach to handling a difficult client is:",
-		"options": ["Charm them into submission with your winning personality", "Analyze their needs and tailor your approach accordingly", "Pass them off to someone else and hope they never come back", "Manipulate them into thinking they're getting a great deal while maximizing profits for the company"],
+		"options": ["Charm them into submission", "Tailor your approach to their needs", "Pass them off to someone else", "Manipulate them for profit"],
 		"animation": "option11" 
 	},
 	12: {
 		"question": "When presented with a new project, do you:",
-		"options": ["Dive into brainstorming sessions and collaboration with excitement", "Delve into thorough research, analyzing every aspect before moving forward.", "Delegate tasks efficiently to streamline project execution.", "Dream of future accolades and recognition."],
+		"options": ["Dive into brainstorming", "Thorough research and analysis", "Delegate tasks efficiently", "Dream of future accolades"],
 		"animation": "option12" 
 	},
 	13: {
@@ -72,12 +72,12 @@ var gameObject = {
 	},
 	14: {
 		"question": "Your response to an office gossip rumor about you is:",
-		"options": ["Laugh it off and turn it into a funny anecdote to share with colleagues", "Address it directly with the gossip monger and set the record straight", "Ignore it and hope it dies down on its own, focusing on your work", "Spread an even juicier rumor to divert attention away from yourself"],
+		"options": ["Laugh it off and share", "Address it directly", "Ignore and focus on work", "Spread an even juicier rumor"],
 		"animation": "option14" 
 	},
 	15: {
 		"question": "Your reaction to a team member's mistake affecting your project is:",
-		"options": ["Offer support and guidance to help them rectify the error", "Analyze the impact of the mistake and devise a plan to mitigate its effects", "Blame them publicly and make sure everyone knows it was their fault", "Use the opportunity to showcase your own competence and offer to take over the project"],
+		"options": ["Offer support and guidance", "Analyze the impact and mitigate", "Blame them publicly", "Showcase your competence"],
 		"animation": "option15" 
 	}
 }
@@ -149,3 +149,7 @@ func _on_Option5_pressed():
 
 func _on_TransitionAnimation_animation_finished(anim_name):
 	$IntroAnimation.play("intro")
+
+
+func _on_Submission_pressed():
+	OS.shell_open("https://google.com") 

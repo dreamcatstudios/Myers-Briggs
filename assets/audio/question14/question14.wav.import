@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/question14.wav-73687190769caf220f6266367d7ed5bc.sample"
+
+[deps]
+
+source_file="res://assets/audio/question14/question14.wav"
+dest_files=[ "res://.import/question14.wav-73687190769caf220f6266367d7ed5bc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
